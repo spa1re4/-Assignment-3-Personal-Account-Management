@@ -1,19 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        // Create a PersonalAccount
         PersonalAccount account = new PersonalAccount(993, "Sparkple");
-
-        // Deposit money
         account.deposit(1000);
         account.deposit(250);
-
-        // Withdraw money
         account.withdraw(300);
-
-        // Check balance
-        System.out.println("Current Balance: $" + account.getBalance());
-
-        // Print transaction history
+        System.out.println("Текущий баланс: $" + account.getBalance());
         account.printTransactionHistory();
     }
 }
